@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,400&display=swap");
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+/* utilities */
+.color-1 {
+  color: #f77f00;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.blurEffect {
+  -webkit-filter: blur(1.5px);
+  -o-filter: blur(1.5px);
+  -moz-filter: blur(1.5px);
+  -ms-filter: blur(1.5px);
+  filter: blur(1.5px);
+}
+
+@media screen and (max-width: 994px) {
+  video {
+    width: 70vw;
+    height: auto;
+  }
+  .content {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: -10%;
+    left: 50%;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .play {
+    font-size: 8px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 25px;
+  }
+
+  .logo {
+    width: 25%;
+    margin: 1rem 0;
+  }
+
+  .play:hover {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 994px) {
+  video {
+    min-width: 1000px;
+    max-height: 600px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgb(189, 189, 189), 0 0 10px 0 rgb(0, 0, 0);
+  }
+  .content {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: -100%;
+    left: 50%;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .play {
+    font-size: 50px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 25px;
+  }
+
+  .play:hover {
+    color: red;
+  }
+}
